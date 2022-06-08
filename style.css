@@ -121,3 +121,8 @@ button {
     border: none;
     font-family: 'Roboto', sans-serif;
 }
+@media (max-width:414px){
+    .topo,body,.conteudo,.inferior{
+        width: 100%;
+    }
+}
