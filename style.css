@@ -12,13 +12,17 @@ body {
 h1 {
     font-family: 'Righteous', cursive;
 }
+.conteudo{
+    position: relative;
+}
 
 .topo {
     background-color: #CF2B2B;
     width: 414px;
     height: 92px;
     color: #FFFFFF;
-
+    position: sticky;
+    top:0; right: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -99,6 +103,8 @@ h2 {
     background-color: #FFFFFF;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    bottom:0; right: 0;
 }
 
 button {
