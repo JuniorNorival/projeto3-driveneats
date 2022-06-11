@@ -20,7 +20,7 @@ function verificarPedido() {
 
       botaoFechamento.innerHTML = "Fechar pedido";
       botaoFechamento.classList.add("finalizar-pedido");
-      enviarWhats();
+      enviarWhats ();
    }
    if (selecionados.length !== 3) {
 
@@ -29,16 +29,17 @@ function verificarPedido() {
    }
 
 
+
 }
 function enviarWhats(){
-   let comida= document.querySelector(".comidas .opcoes h2");
-   let bebida= document.querySelector(".bebidas .opcoes h2");
-   let sobremesa= document.querySelector(".sobremesa .opcoes h2");
+   
+   let comida= document.querySelector(".comidas .opcoes h2").textContent;;
+   let bebida= document.querySelector(".bebidas .opcoes h2").textContent;;
+   let sobremesa= document.querySelector(".sobremesa .opcoes h2").textContent;;
 
-   let precoComida= Number (document.querySelector(".comidas .opcoes h3"));
-   let precoBebida= Number (document.querySelector(".bebidas .opcoes h3"));
-   let precoSobremesa= Number (document.querySelector(".sobremesa .opcoes h3"));
-
-   valorTotal = (precoComida + precoBebida + precoSobremesa);
-   console.log(comida);
+   let precoComida= Number(document.querySelector(".comidas .opcoes .selecionado span").textContent);
+   let precoBebida= Number (document.querySelector(".bebidas .opcoes .selecionado span").textContent);
+   let precoSobremesa= Number (document.querySelector(".sobremesa .opcoes .selecionado span").textContent);
+   
+   let valorTotal = (precoComida + precoBebida + precoSobremesa);
 }
