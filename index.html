@@ -35,21 +35,27 @@
                         <img src="./imgs/Comidas/strogonoff.jpg" alt="strogonoff">
                         <h2>Strogonoff de Frango</h2>
                         <p>Arroz, batata palha e strogonoff de frango</p>
-                        <h3> R$ 16,90</h3>
-                        <ion-icon class="escondido" name="checkmark-circle-sharp"></ion-icon>
+                        <div class="footer">
+                            <h3>R$<span>16.90</span></h3>
+                            <img class="escondido" src="/imgs/Vector.svg" alt="">
+                        </div>
+
                     </div>
-                    <div onclick="selecionar(this,'comidas')"  class="opcao">
+                    <div onclick="selecionar(this,'comidas')" class="opcao">
                         <img src="./imgs/Comidas/receita-de-file-de-frango-a-parmegiana.jpg" alt="parmegiana">
                         <h2>Filé a Parmegiana</h2>
                         <p>Arroz, batata frita e filé a parmegiana</p>
-                        <h3> R$ 18,90</h3>
+                        <div class="footer">
+                            <h3>R$<span>18.90</span></h3>
+                        </div>
                     </div>
                     <div onclick="selecionar(this,'comidas')" class="opcao">
                         <img src="./imgs/Comidas/Como-cozinhar-as-carnes-da-feijoada-cozimento-do-feijao.jpg"
                             alt="strogonoff">
                         <h2>Feijoada</h2>
                         <p>Arroz, couve, farofa e Feijoada Completa</p>
-                        <h3> R$ 19,90</h3>
+                        <h3>R$<span>19.90</span></h3>
+                        <ion-icon class="icone escondido" name="checkmark-circle-sharp"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -60,42 +66,42 @@
                         <img src="./imgs/bebidas/refris.png" alt="refri">
                         <h2>Refrigerante Lata</h2>
                         <p>Lata 350ml</p>
-                        <h3> R$ 6,90</h3>
+                        <h3>R$<span>6.90</span></h3>
                     </div>
-                    <div onclick="selecionar(this,'bebidas')"class="opcao">
+                    <div onclick="selecionar(this,'bebidas')" class="opcao">
                         <img src="./imgs/bebidas/sucos-01.png" alt="sucos">
                         <h2>Suco Natural</h2>
                         <p>Limão, Laranja ou Abacaxi. Copo 400ml</p>
-                        <h3> R$ 5,90</h3>
+                        <h3>R$<span>5.90</span></h3>
                     </div>
                     <div onclick="selecionar(this,'bebidas')" class="opcao">
                         <img src="./imgs/bebidas/156851_2.webp" alt="beer">
                         <h2>Antartica Original</h2>
                         <p>600ml</p>
-                        <h3> R$ 10,90</h3>
+                        <h3>R$<span>10.90</span></h3>
                     </div>
                 </div>
             </div>
             <div class="sobremesa">
                 <h1>Por fim, sua sobremesa</h1>
-                <div class= "opcoes">
+                <div class="opcoes">
                     <div onclick="selecionar(this,'sobremesa')" class="opcao">
                         <img src="./imgs/Sobremesa/pudim_de_leite_condensado_spoleto.png" alt="pudim">
                         <h2>Pudim de Leite Condensado</h2>
                         <p>A melhor sobremesa</p>
-                        <h3> R$ 7,00</h3>
+                        <h3>R$<span>5.00</span></h3>
                     </div>
                     <div onclick="selecionar(this,'sobremesa')" class="opcao">
                         <img src="./imgs/Sobremesa/download.jpeg" alt="torta limao">
                         <h2>Torta de Limão</h2>
                         <p>Melhor torta</p>
-                        <h3> R$ 7,00</h3>
+                        <h3>R$<span>7.20</span></h3>
                     </div>
                     <div onclick="selecionar(this,'sobremesa')" class="opcao">
                         <img src="./imgs/Sobremesa/VoAlzira-Bolos-de-Pote_CAF-013.webp" alt="bolo">
                         <h2>Bolo de Pote</h2>
                         <p>Brigadeiro, Ninho com Morango e Prestigio</p>
-                        <h3> R$ 7,00</h3>
+                        <h3>R$<span>7.50</span></h3>
                     </div>
                 </div>
             </div>
@@ -103,11 +109,18 @@
     </div>
     </div>
     <div class="inferior">
-        <button>Selecione os 3 itens <br>
+        <button onclick="enviarWhats()" class="botao-inferior">Selecione os 3 itens <br>
             para fechar o pedido</button>
     </div>
     </div>
-    
+    <!-- <div class="confirme-pedido">
+        <p>Confirme seu pedido</p>
+        <div class="pedido">a</div>
+        <button>Tudo certo pode pedir</button>
+        <p>Cancelar</p>
+        
+
+    </div> -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="scripts.js"></script>
 </body>
