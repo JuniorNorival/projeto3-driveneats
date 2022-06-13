@@ -87,7 +87,7 @@
                 <div class="opcoes">
                     <div onclick="selecionar(this,'sobremesa')" class="opcao">
                         <img src="./imgs/Sobremesa/pudim_de_leite_condensado_spoleto.png" alt="pudim">
-                        <h2>Pudim de Leite Condensado</h2>
+                        <h2>Pudim </h2>
                         <p>A melhor sobremesa</p>
                         <h3>R$<span>5.00</span></h3>
                     </div>
@@ -106,21 +106,27 @@
                 </div>
             </div>
         </div>
+        <div class="pagina-confirmacao escondido">
+            <div class="confirme-pedido">
+                <p>Confirme seu pedido</p>
+                <div class="pedido">
+
+                </div>
+                <div class="botao-confirmar"><button onclick="enviarWhats()">Tudo certo pode pedir</button></div>
+
+                <p onclick="cancelarPedido()">Cancelar</p>
+
+
+            </div>
+        </div>
     </div>
-    </div>
+
     <div class="inferior">
-        <button onclick="enviarWhats()" class="botao-inferior">Selecione os 3 itens <br>
+        <button onclick="confirmarPedido()" class="botao-inferior">Selecione os 3 itens <br>
             para fechar o pedido</button>
     </div>
     </div>
-    <!-- <div class="confirme-pedido">
-        <p>Confirme seu pedido</p>
-        <div class="pedido">a</div>
-        <button>Tudo certo pode pedir</button>
-        <p>Cancelar</p>
-        
 
-    </div> -->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <script src="scripts.js"></script>
 </body>
