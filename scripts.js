@@ -6,30 +6,25 @@ let total;
 function selecionar(elemento, nomeClasse) {
 
    const escolhido = document.querySelector(`.${nomeClasse} .selecionado `);
+   /* const check = elemento.querySelector(".escondido"); */
+  
+  
 
    if (escolhido !== null) {
       escolhido.classList.remove("selecionado");
-
+      /* escolhido.querySelector(".icone").classList.add("escondido"); */
 
    }
-
-   if (escolhido !== elemento) {
+   
+   if (escolhido !== elemento ) {
       elemento.classList.add("selecionado");
-
+     /*  check.classList.remove("escondido"); */
    }
 
    verificarPedido();
 }
 
-function check() {
-   const check = document.querySelector(".footer .escondido");
 
-   if (check !== null) {
-      check.classList.remove("escondido");
-   }
-   console.log(check);
-
-}
 
 function verificarPedido() {
    let selecionados = document.querySelectorAll(".selecionado");

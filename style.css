@@ -133,7 +133,9 @@ h2 {
     border: 3px solid #32B72F;
 
 }
-
+.selecionado .icone{
+    display: initial;
+}
 .opcao ion-icon {
     color: #32B72F;
 
@@ -148,11 +150,13 @@ h2 {
 .footer {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .footer img {
     width: 20px;
     height: 20px;
+    
 }
 
 .pagina-confirmacao {
