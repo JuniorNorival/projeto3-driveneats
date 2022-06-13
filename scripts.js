@@ -2,23 +2,24 @@ let comida;
 let bebida;
 let sobremesa;
 let total;
+let selecionados;
 
 function selecionar(elemento, nomeClasse) {
 
    const escolhido = document.querySelector(`.${nomeClasse} .selecionado `);
    /* const check = elemento.querySelector(".escondido"); */
-  
-  
+
+
 
    if (escolhido !== null) {
       escolhido.classList.remove("selecionado");
       /* escolhido.querySelector(".icone").classList.add("escondido"); */
 
    }
-   
-   if (escolhido !== elemento ) {
+
+   if (escolhido !== elemento) {
       elemento.classList.add("selecionado");
-     /*  check.classList.remove("escondido"); */
+      /*  check.classList.remove("escondido"); */
    }
 
    verificarPedido();
@@ -27,7 +28,7 @@ function selecionar(elemento, nomeClasse) {
 
 
 function verificarPedido() {
-   let selecionados = document.querySelectorAll(".selecionado");
+   selecionados = document.querySelectorAll(".selecionado");
 
    const botaoFechamento = document.querySelector(".botao-inferior")
    if (selecionados.length == 3) {
@@ -47,11 +48,14 @@ function verificarPedido() {
 }
 
 function confirmarPedido() {
-   const finalizar = document.querySelector(".pagina-confirmacao");
-   finalizar.classList.remove("escondido");
 
-   const opacidade= document.querySelector(".conteudo");
-   opacidade.classList.add("transparente");
+   if (selecionados.length == 3) {
+      const finalizar = document.querySelector(".pagina-confirmacao");
+      finalizar.classList.remove("escondido");
+
+      const opacidade = document.querySelector(".conteudo");
+      opacidade.classList.add("transparente");
+   }
 
    comida = document.querySelector(".comidas .opcoes h2").innerHTML;;
    bebida = document.querySelector(".bebidas .opcoes h2").innerHTML;;
@@ -76,10 +80,11 @@ function confirmarPedido() {
 
 
 }
-function cancelarPedido(){
+
+function cancelarPedido() {
    const cancelar = document.querySelector(".pagina-confirmacao");
    cancelar.classList.add("escondido");
-   
+
 }
 
 function enviarWhats() {
