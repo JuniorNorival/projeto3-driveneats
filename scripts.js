@@ -92,7 +92,7 @@ function enviarWhats() {
    let nome = prompt("Qual seu nome ?");
    let endereco = prompt("Qual o Endereco");
 
-   let mesg = `Olá, gostaria de fazer o pedido:\n- Prato: ${comida}\n- Bebida: ${bebida}\n- Sobremesa: ${sobremesa}\n Total:R$ ${total}\n\nNome: ${nome}\nEndereço: ${endereco} `;
+   let mesg = `Olá, gostaria de fazer o pedido:\n-  Prato: ${comida}\n-  Bebida: ${bebida}\n-  Sobremesa: ${sobremesa}\n Total: R$ ${total}\n\nNome: ${nome}\nEndereço: ${endereco} `;
 
    window.open(`https://wa.me/5532998376446?text=${encodeURIComponent(mesg)}`, '_blank')
 }
